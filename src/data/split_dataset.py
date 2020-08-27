@@ -20,7 +20,7 @@ def convert_col_to_df(df, col):
     
     """
     if col in df.columns:
-        extracted_df = pd.DataFrame(df[col])
+        extracted_df = pd.DataFrame(list(df[col]))
     else:
         extracted_df = pd.DataFrame()
     return extracted_df
